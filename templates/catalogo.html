@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    {% for filme in filmes %}
+        <div class="botao-filme">
+            <p>{{filme.nome}}</p>
+            <p>{{filme.sinopse}}</p>
+            <img src="{{ filme.cartaz }}" alt="Cartaz filme {{filme.nome}}" width="350px">
+        </div>
+    {% endfor %}
+{% endblock %}
