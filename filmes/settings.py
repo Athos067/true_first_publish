@@ -1,4 +1,4 @@
-import django-heroku
+import django_heroku
 """
 Django settings for filmes project.
 
@@ -126,4 +126,4 @@ STATIC_URL = '/static/'
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
 
-django-heroku.settings(lacals())
+django_heroku.settings(locals())
